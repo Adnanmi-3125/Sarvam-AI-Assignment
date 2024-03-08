@@ -105,7 +105,7 @@ const Discover = ({ post, setPost }) => {
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
@@ -133,7 +133,7 @@ const Discover = ({ post, setPost }) => {
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
@@ -149,7 +149,7 @@ const Discover = ({ post, setPost }) => {
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
@@ -180,7 +180,7 @@ const Discover = ({ post, setPost }) => {
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
@@ -202,14 +202,14 @@ const Discover = ({ post, setPost }) => {
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card img={IMAGE_CARD_2} text={"Have a productive morning"} setPost={setPost} />
-                <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
               </div>
               <div className=" w-full h-[40px]"></div>
             </div>
