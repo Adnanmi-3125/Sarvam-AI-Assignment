@@ -3,12 +3,13 @@ import Card from "../components/Card";
 import TextCard from "../components/TextCard";
 import CardWithTitle from "../components/CardWithTitle";
 import { useNavigate } from "react-router-dom";
-import img1 from "../assets/img1.jpg";
-import img2 from "../assets/img2.jpg";
-import img3 from "../assets/img3.jpg";
+import IMAGE_CARD_1 from "../assets/images/IMAGE_CARD_1.jpg";
+import IMAGE_CARD_2 from "../assets/images/IMAGE_CARD_2.jpg";
+import IMAGE_CARD_3 from "../assets/images/IMAGE_CARD_3.jpg";
 import PostCard from "../components/PostCard";
 import Chat from "../components/Chat";
 import { isIOS } from "react-device-detect";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const Discover = ({ post, setPost }) => {
   const navigate = useNavigate();
@@ -100,7 +101,7 @@ const Discover = ({ post, setPost }) => {
             <div className=" flex flex-col gap-y-5 overflow-auto no-scrollbar sm:w-[50%]">
               <div className=" flex gap-x-5 h-[160px] mx-5 sm:ml-5">
                 <Card
-                  img={img3}
+                  img={IMAGE_CARD_3}
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
@@ -114,7 +115,7 @@ const Discover = ({ post, setPost }) => {
               </div>
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
-                  img={img2}
+                  img={IMAGE_CARD_2}
                   large={true}
                   text={"Let's talk science"}
                   setPost={setPost}
@@ -128,7 +129,7 @@ const Discover = ({ post, setPost }) => {
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card
-                  img={img1}
+                  img={IMAGE_CARD_1}
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
@@ -137,14 +138,14 @@ const Discover = ({ post, setPost }) => {
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
                   large={true}
-                  img={img3}
+                  img={IMAGE_CARD_3}
                   text={"Make someone feel special"}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card
-                  img={img2}
+                  img={IMAGE_CARD_2}
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
@@ -162,7 +163,7 @@ const Discover = ({ post, setPost }) => {
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
                   large={true}
-                  img={img3}
+                  img={IMAGE_CARD_3}
                   text={"Let's talk science"}
                   setPost={setPost}
                 />
@@ -175,7 +176,7 @@ const Discover = ({ post, setPost }) => {
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5 sm:mr-5">
                 <Card
-                  img={img2}
+                  img={IMAGE_CARD_2}
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
@@ -184,7 +185,7 @@ const Discover = ({ post, setPost }) => {
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
                   large={true}
-                  img={img1}
+                  img={IMAGE_CARD_1}
                   text={"Make someone feel special"}
                   setPost={setPost}
                 />
@@ -197,7 +198,7 @@ const Discover = ({ post, setPost }) => {
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card
-                  img={img1}
+                  img={IMAGE_CARD_1}
                   text={"Have a productive morning"}
                   setPost={setPost}
                 />
@@ -207,7 +208,7 @@ const Discover = ({ post, setPost }) => {
                 <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
-                <Card img={img2} text={"Have a productive morning"} setPost={setPost} />
+                <Card img={IMAGE_CARD_2} text={"Have a productive morning"} setPost={setPost} />
                 <TextCard text={"What color am I?"} setPost={setPost} />
               </div>
               <div className=" w-full h-[40px]"></div>
@@ -218,25 +219,13 @@ const Discover = ({ post, setPost }) => {
         <>
           <div className="flex justify-between items-center lg:hidden px-5 pb-2 pt-9 bg-[#FAF3EA]">
             <div
-              className="flex  items-center justify-center h-9 w-9 rounded-full p-2 font-bold bg-[#FAF3EA]"
+              className="flex  items-center justify-center h-9 w-9 rounded-full p-2 font-bold bg-[#F5EADC]"
               onClick={() => {
                 setPost(false);
                 navigate("/");
               }}
             >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11.1408 17.6558C10.9157 17.8808 10.6106 18.0072 10.2924 18.0072C9.97418 18.0072 9.66902 17.8808 9.44398 17.6558L4.64398 12.8558C4.41902 12.6308 4.29264 12.3256 4.29264 12.0074C4.29264 11.6892 4.41902 11.3841 4.64398 11.159L9.44398 6.35902C9.55468 6.24441 9.68709 6.15299 9.8335 6.0901C9.9799 6.02721 10.1374 5.99411 10.2967 5.99272C10.456 5.99134 10.6141 6.0217 10.7615 6.08204C10.909 6.14237 11.043 6.23148 11.1557 6.34415C11.2683 6.45682 11.3574 6.5908 11.4178 6.73828C11.4781 6.88575 11.5085 7.04377 11.5071 7.2031C11.5057 7.36244 11.4726 7.5199 11.4097 7.66631C11.3468 7.81271 11.2554 7.94512 11.1408 8.05582L8.38918 10.8074L17.4924 10.8074C17.8106 10.8074 18.1159 10.9339 18.3409 11.1589C18.566 11.3839 18.6924 11.6892 18.6924 12.0074C18.6924 12.3257 18.566 12.6309 18.3409 12.8559C18.1159 13.081 17.8106 13.2074 17.4924 13.2074L8.38918 13.2074L11.1408 15.959C11.3657 16.1841 11.4921 16.4892 11.4921 16.8074C11.4921 17.1256 11.3657 17.4308 11.1408 17.6558Z"
-                  fill="currentColor"
-                ></path>
-              </svg>
+              <FaArrowLeft color="#877C6C" />
             </div>
             <div className="roboto-regular text-lg"> New Thread</div>
             <div className=" rounded-full p-2 bg-[#F5EADC]">
@@ -255,10 +244,10 @@ const Discover = ({ post, setPost }) => {
           <PostCard post={post} />
           {isIOS ? (
             <div className="mb-[70px]">
-              <Chat />
+              <Chat setPost={setPost} />
             </div>
           ) : (
-            <Chat />
+            <Chat setPost={setPost} />
           )}
         </>
       )}

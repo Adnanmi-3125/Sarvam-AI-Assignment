@@ -3,13 +3,13 @@ import Card from '../components/Card'
 import TextCard from '../components/TextCard'
 import CardWithTitle from '../components/CardWithTitle'
 import { useNavigate } from 'react-router-dom'
-import img1 from '../assets/img1.jpg';
-import img2 from '../assets/img2.jpg';
-import img3 from '../assets/img3.jpg';
+import IMAGE_CARD_1 from '../assets/images/IMAGE_CARD_1.jpg';
+import IMAGE_CARD_2 from '../assets/images/IMAGE_CARD_2.jpg';
+import IMAGE_CARD_3 from '../assets/images/IMAGE_CARD_3.jpg';
 
-const Discover = ({post , setPost}) => {
+const Discover = ({ post, setPost }) => {
   const navigate = useNavigate();
-  
+
   return (
     <div className="w-full lg:w-[375px] lg:border-r lg:border-neutral-300 flex flex-col bg-[#F7EFE3] h-[100vh] overflow-auto no-scrollbar">
       <div className=" bg-[#C3B9AB] w-full h-max">
@@ -18,7 +18,7 @@ const Discover = ({post , setPost}) => {
             aria-label="Go back"
             className="flex h-9 w-9 items-center justify-center rounded-full p-1.5 text-primary-700 bg-[#EDE1D1] hover:bg-neutral-300-hover active:bg-neutral-300-tap lg:hidden"
             type="button"
-            onClick={()=>navigate("/")}
+            onClick={() => navigate("/")}
           >
             <svg
               viewBox="0 0 14 14"
@@ -68,31 +68,31 @@ const Discover = ({post , setPost}) => {
       <div className=" flex gap-x-5 lg:mt-16">
         <div className=" flex flex-col gap-y-5 overflow-auto no-scrollbar">
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <Card img={img3} text={"Have a productive morning"} setPost={setPost}/>
-            <TextCard text={"What color am I?"} setPost={setPost}/>
+            <Card img={IMAGE_CARD_3} text={"Have a productive morning"} setPost={setPost} />
+            <TextCard text={"What color am I?"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
+            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
-            <Card img={img2} large={true} text={"Let's talk science"} setPost={setPost}/>
+            <Card img={IMAGE_CARD_2} large={true} text={"Let's talk science"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
+            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <Card img={img1} text={"Have a productive morning"} setPost={setPost}/>
-            <TextCard text={"What color am I?"} setPost={setPost}/>
+            <Card img={IMAGE_CARD_1} text={"Have a productive morning"} setPost={setPost} />
+            <TextCard text={"What color am I?"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
-            <Card img={img3} large={true} text={"Make someone feel special"} setPost={setPost}/>
+            <Card img={IMAGE_CARD_3} large={true} text={"Make someone feel special"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <Card img={img2} text={"Have a productive morning"} setPost={setPost}/>
-            <TextCard text={"What color am I?"} setPost={setPost}/>
+            <Card img={IMAGE_CARD_2} text={"Have a productive morning"} setPost={setPost} />
+            <TextCard text={"What color am I?"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
+            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
           </div>
           <div className=" w-full h-[80px]"></div>
         </div>

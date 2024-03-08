@@ -6,7 +6,7 @@ import Chat from "../components/Chat";
 import Conversation from "../components/Conversation";
 import PostCard from "../components/PostCard";
 
-const Talk = ({post , setPost}) => {
+const Talk = ({ post, setPost }) => {
   const [discover, SetDiscover] = useState(false);
   const navigate = useNavigate();
   return (
@@ -31,9 +31,8 @@ const Talk = ({post , setPost}) => {
               SetDiscover(!discover);
               setPost(false);
             }}
-            className={`flex w-16 h-16 flex-col items-center justify-center text-neutral-900 cursor-pointer gap-[2px] ${
-              discover && "bg-[#EDE1D1]"
-            } rounded-[10px]`}
+            className={`flex w-16 h-16 flex-col items-center justify-center text-neutral-900 cursor-pointer gap-[2px] ${discover && "bg-[#EDE1D1]"
+              } rounded-[10px]`}
           >
             <svg
               viewBox="0 0 32 32"
@@ -92,76 +91,76 @@ const Talk = ({post , setPost}) => {
                 </svg>
               </button>
               <div className=" flex gap-x-2">
-              <button
-                aria-label="Go to threads"
-                className="flex h-9 w-9 items-center justify-center rounded-full p-1 text-primary-700 bg-[#F5EADC] mr-2"
-                type="button"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                <button
+                  aria-label="Go to threads"
+                  className="flex h-9 w-9 items-center justify-center rounded-full p-1 text-primary-700 bg-[#F5EADC] mr-2"
+                  type="button"
                 >
-                  <path
-                    d="M2 6V20.6667C2 21.403 2.59695 22 3.33333 22H18"
+                  <svg
+                    width="24"
+                    height="24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                  >
+                    <path
+                      d="M2 6V20.6667C2 21.403 2.59695 22 3.33333 22H18"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M7.14286 18L20.8571 18C21.4883 18 22 17.4883 22 16.8571L22 3.14286C22 2.51168 21.4883 2 20.8571 2L7.14286 2C6.51167 2 6 2.51168 6 3.14286L6 16.8571C6 17.4883 6.51167 18 7.14286 18Z"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19 9H9V7H19V9Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17 13H9V11H17V13Z"
+                      fill="currentColor"
+                    ></path>
+                    <path d="M19 9H9V7H19V9Z" fill="currentColor"></path>
+                    <path d="M9 13H17V11H9V13Z" fill="currentColor"></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M20.8571 1H7.14286C5.95939 1 5 1.95939 5 3.14286V16.8571C5 18.0406 5.95939 19 7.14286 19H20.8571C22.0406 19 23 18.0406 23 16.8571L23 3.14286C23 1.95939 22.0406 1 20.8571 1ZM7.14286 3L20.8571 3C20.936 3 21 3.06396 21 3.14286L21 16.8571C21 16.936 20.936 17 20.8571 17H7.14286C7.06396 17 7 16.936 7 16.8571V3.14286C7 3.06396 7.06396 3 7.14286 3Z"
+                      fill="currentColor"
+                    ></path>
+                    <path
+                      d="M3 6C3 5.44772 2.55228 5 2 5C1.44772 5 1 5.44772 1 6V20.6667C1 21.9553 2.04467 23 3.33333 23H18C18.5523 23 19 22.5523 19 22C19 21.4477 18.5523 21 18 21H3.33333C3.14924 21 3 20.8508 3 20.6667V6Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </button>
+                <div className=" rounded-full p-2 bg-[#F5EADC]">
+                  <svg
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M7.14286 18L20.8571 18C21.4883 18 22 17.4883 22 16.8571L22 3.14286C22 2.51168 21.4883 2 20.8571 2L7.14286 2C6.51167 2 6 2.51168 6 3.14286L6 16.8571C6 17.4883 6.51167 18 7.14286 18Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 9H9V7H19V9Z"
                     fill="currentColor"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M17 13H9V11H17V13Z"
-                    fill="currentColor"
-                  ></path>
-                  <path d="M19 9H9V7H19V9Z" fill="currentColor"></path>
-                  <path d="M9 13H17V11H9V13Z" fill="currentColor"></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M20.8571 1H7.14286C5.95939 1 5 1.95939 5 3.14286V16.8571C5 18.0406 5.95939 19 7.14286 19H20.8571C22.0406 19 23 18.0406 23 16.8571L23 3.14286C23 1.95939 22.0406 1 20.8571 1ZM7.14286 3L20.8571 3C20.936 3 21 3.06396 21 3.14286L21 16.8571C21 16.936 20.936 17 20.8571 17H7.14286C7.06396 17 7 16.936 7 16.8571V3.14286C7 3.06396 7.06396 3 7.14286 3Z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    d="M3 6C3 5.44772 2.55228 5 2 5C1.44772 5 1 5.44772 1 6V20.6667C1 21.9553 2.04467 23 3.33333 23H18C18.5523 23 19 22.5523 19 22C19 21.4477 18.5523 21 18 21H3.33333C3.14924 21 3 20.8508 3 20.6667V6Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </button>
-              <div className=" rounded-full p-2 bg-[#F5EADC]">
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  aria-hidden="true"
-                  className="h-5 w-5 lg:h-6 lg:w-6 text-[#877C6C]"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM17.78 9.22a.75.75 0 10-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 001.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L20.56 12l1.72-1.72a.75.75 0 00-1.06-1.06l-1.72 1.72-1.72-1.72z"></path>
-                </svg>
-              </div>
+                    aria-hidden="true"
+                    className="h-5 w-5 lg:h-6 lg:w-6 text-[#877C6C]"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM17.78 9.22a.75.75 0 10-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 001.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L20.56 12l1.72-1.72a.75.75 0 00-1.06-1.06l-1.72 1.72-1.72-1.72z"></path>
+                  </svg>
+                </div>
               </div>
             </div>
           ) : (
             <div className="flex justify-between items-center lg:hidden px-5 pb-2">
               <div
                 className="flex  items-center justify-center h-9 w-9 rounded-full p-2 font-bold bg-[#F5EADC]"
-                onClick={()=>setPost(false)}
+                onClick={() => setPost(false)}
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -192,7 +191,7 @@ const Talk = ({post , setPost}) => {
             </div>
           )}
           <div className=" relative max-w-[600px] xl:max-w-[800px] mx-auto playfair-display h-[calc(100vh-85px)] lg:h-full">
-            {!post ? <Conversation /> : <PostCard post={post}/>}
+            {!post ? <Conversation /> : <PostCard post={post} />}
             <div className=" absolute bottom-0 w-full">
               <Chat />
             </div>
