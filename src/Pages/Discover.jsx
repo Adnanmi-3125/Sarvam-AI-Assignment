@@ -33,7 +33,7 @@ const Discover = ({post , setPost}) => {
   }, [windowSize.width]);
   
   return (
-    <div className={`w-full lg:w-[375px] lg:border-r lg:border-neutral-300 flex flex-col ${post ? "#E3D4BF":"bg-[#F7EFE3]"} h-[100vh] overflow-auto no-scrollbar`}>
+    <div className={`w-full lg:w-[375px] lg:border-r lg:border-neutral-300 flex flex-col ${post ? "#E3D4BF":"bg-[#F7EFE3]"} app-height  overflow-auto no-scrollbar`}>
       {
         !post ? (
           <>
@@ -100,8 +100,8 @@ const Discover = ({post , setPost}) => {
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
           </div>
-          <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card img={img2} text={"Let's talk science"} setPost={setPost}/>
+          <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
+            <Card img={img2} large={true} text={"Let's talk science"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
@@ -110,8 +110,8 @@ const Discover = ({post , setPost}) => {
             <Card img={img1} text={"Have a productive morning"} setPost={setPost}/>
             <TextCard text={"What color am I?"}/>
           </div>
-          <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card img={img3} text={"Make someone feel special"} setPost={setPost}/>
+          <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
+            <Card large={true} img={img3} text={"Make someone feel special"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <Card img={img2} text={"Have a productive morning"} setPost={setPost}/>
@@ -123,8 +123,8 @@ const Discover = ({post , setPost}) => {
           <div className=" w-full h-[40px]"></div>
         </div>
         <div className=" hidden sm:flex lg:hidden flex-col gap-y-5 overflow-auto no-scrollbar h-full sm:w-[50%]">
-        <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card img={img3} text={"Let's talk science"} setPost={setPost}/>
+        <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
+            <Card large={true} img={img3} text={"Let's talk science"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
@@ -133,8 +133,8 @@ const Discover = ({post , setPost}) => {
             <Card img={img2} text={"Have a productive morning"} setPost={setPost}/>
             <TextCard text={"What color am I?"} setPost={setPost}/>
           </div>
-          <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card img={img1} text={"Make someone feel special"} setPost={setPost}/>
+          <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
+            <Card large={true} img={img1} text={"Make someone feel special"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>

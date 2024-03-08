@@ -74,8 +74,8 @@ const Discover = ({post , setPost}) => {
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
           </div>
-          <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card img={img2} text={"Let's talk science"} setPost={setPost}/>
+          <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
+            <Card img={img2} large={true} text={"Let's talk science"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
@@ -84,8 +84,8 @@ const Discover = ({post , setPost}) => {
             <Card img={img1} text={"Have a productive morning"} setPost={setPost}/>
             <TextCard text={"What color am I?"} setPost={setPost}/>
           </div>
-          <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card img={img3} text={"Make someone feel special"} setPost={setPost}/>
+          <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
+            <Card img={img3} large={true} text={"Make someone feel special"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <Card img={img2} text={"Have a productive morning"} setPost={setPost}/>

@@ -10,7 +10,7 @@ const Talk = ({post , setPost}) => {
   const [discover, SetDiscover] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className=" bg-[#FAF3EA] w-[100vw] h-[100vh]">
+    <div className=" bg-[#FAF3EA] w-[100vw] app-height">
       <div>
         <div className=" hidden lg:block absolute rounded-full p-2 bg-[#F5EADC] top-10 right-10 z-20">
           <svg

@@ -1,8 +1,8 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-const Card = ({setPost , img , text}) => {
+const Card = ({setPost , img , text , large}) => {
   return (
-    <div className='flex justify-end flex-col h-full w-full overflow-hidden rounded-[20px] bg-[#FAF3EA] border border-white text-left transition-all duration-200 hover:scale-95 min-h-[160px] relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] playfair-display cursor-pointer'
+    <div className={`flex justify-end flex-col h-full w-full overflow-hidden rounded-[20px] bg-[#FAF3EA] border border-white text-left transition-all duration-200 hover:scale-95 relative shadow-[0_8px_30px_rgb(0,0,0,0.12)] playfair-display cursor-pointer ${large ? "min-h-[320px]":"min-h-[160px]"}`}
     onClick={()=>{
       setPost(false)
       setTimeout(() => {
