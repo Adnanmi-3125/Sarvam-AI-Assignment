@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
           </div>
         </Fade>
 
-        <Fade delay={500} triggerOnce cascade >
+        <Fade triggerOnce cascade >
           <ul className=" list-disc ml-6 mt-5 px-5">
             <li className=" mb-2">
               <span className=" font-bold">Confirmation Bias</span> - Our tendency
@@ -60,17 +60,20 @@ const PostCard = ({ post }) => {
               So, do you think you’ve ever experienced any of these? Let’s see if we
               can overcome them together.
             </li>
-
           </ul>
-          <div className="flex sm:gap-x-5 gap-x-3 h-[160px] w-fit sm:ml-5 mt-6">
+        </Fade>
+        <Fade delay={500} triggerOnce cascade className="flex flex-col w-full items-center justify-center">
+          <div className="flex sm:gap-x-5 gap-x-2 mt-6 w-min">
             <TextCard text={"Healthy Snack Idea For Energy Boost"} setPost={() => { }} icon={rocket_icon} />
             <TextCard text={"Meal Prep Strategies For Busy Weeks"} setPost={() => { }} />
           </div>
-          <div className="flex items-center justify-center text-sm mb-7 mt-7 gap-2 text-green-500">
+
+          <div className="flex items-center select-none cursor-pointer justify-center text-sm mb-7 mt-7 gap-2 text-green-500">
             <LuRefreshCw size={20} />
             <text>More Ideas</text>
           </div>
         </Fade>
+
       </div>
     </div>
   );
