@@ -62,7 +62,7 @@ const PostCard = ({ post }) => {
             </li>
 
           </ul>
-          <div className="flex gap-x-5 h-[160px] w-fit px-4 sm:ml-5 mt-6">
+          <div className="flex sm:gap-x-5 gap-x-3 h-[160px] w-fit sm:ml-5 mt-6">
             <TextCard text={"Healthy Snack Idea For Energy Boost"} setPost={() => { }} icon={rocket_icon} />
             <TextCard text={"Meal Prep Strategies For Busy Weeks"} setPost={() => { }} />
           </div>

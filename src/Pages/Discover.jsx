@@ -254,7 +254,7 @@ const Discover = ({ post, setPost }) => {
 
           <PostCard post={post} />
           {isIOS ? (
-            <div className="mb-20">
+            <div className="mb-14">
               <Chat />
             </div>
           ) : (
