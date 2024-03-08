@@ -36,6 +36,6 @@
 }
 
 .app-height{
-  height: 100vh; /* fallback for Js load */
-  height: var(--doc-height);
+  /* height: 100vh; */
+  height: 100dvh
 }

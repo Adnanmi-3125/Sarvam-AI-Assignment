@@ -33,7 +33,7 @@ const Discover = ({post , setPost}) => {
   }, [windowSize.width]);
   
   return (
-    <div className={`w-full lg:w-[375px] lg:border-r lg:border-neutral-300 flex flex-col ${post ? "#E3D4BF":"bg-[#F7EFE3]"} app-height  overflow-auto no-scrollbar`}>
+    <div className={`w-full lg:w-[375px] lg:border-r lg:border-neutral-300 flex flex-col ${post ? "#E3D4BF":"bg-[#F7EFE3]"} h-[100vh]  overflow-auto no-scrollbar`}>
       {
         !post ? (
           <>
