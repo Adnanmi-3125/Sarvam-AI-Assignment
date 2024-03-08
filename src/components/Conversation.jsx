@@ -48,7 +48,7 @@ const Conversation = () => {
             you feel happy today, if I may ask? 😊
           </div>
         </div>
-        <div className="w-full h-[400px]"></div>
+        <div className="w-full h-[150px]"></div>
         </Fade>
       </div>
     </div>

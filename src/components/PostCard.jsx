@@ -1,6 +1,4 @@
 import React from "react";
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
 import { Fade } from "react-awesome-reveal";
 
@@ -30,22 +28,22 @@ const PostCard = ({post}) => {
         </Fade>
         <ul className=" list-disc ml-6 mt-5 px-5">
           <Fade delay={500} cascade damping={0.5} triggerOnce>
-          <li>
+          <li className=" mb-2">
             <span className=" font-bold">Confirmation Bias</span> - Our tendency
             to seek out information that confirms our existing beliefs while
             ignoring contradictory evidence.
           </li>
-          <li>
+          <li className=" mb-2">
             <span className=" font-bold">Sunk Cost Fallacy</span> - Persisting
             in a course of action because we've invested time, money, or effort,
             even if it's no longer beneficial.
           </li>
-          <li>
+          <li className=" mb-2">
             <span className=" font-bold">Availability Heuristic</span> - Judging
             the likelihood of an event based on how easily it comes to mind,
             ignoring relevant statistics.
           </li>
-          <li>
+          <li className=" mb-2">
             <span className=" font-bold">Optimism Bias</span> - Underestimating
             risks and overestimating the chances of positive outcomes, leading
             to overconfidence.
