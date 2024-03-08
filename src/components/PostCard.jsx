@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
             </div>
           </Fade>
 
-          <Fade triggerOnce cascade >
+          <Fade triggerOnce cascade e delay={400}>
             <ul className=" list-disc ml-6 mt-5 px-5">
               <li className=" mb-2">
                 <span className=" font-bold">Confirmation Bias</span> - Our tendency

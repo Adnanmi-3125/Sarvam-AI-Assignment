@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
-import TextCard from "../components/TextCard";
 import CardWithTitle from "../components/CardWithTitle";
 import { useNavigate } from "react-router-dom";
 import IMAGE_CARD_1 from "../assets/images/IMAGE_CARD_1.jpg";
 import IMAGE_CARD_2 from "../assets/images/IMAGE_CARD_2.jpg";
 import IMAGE_CARD_3 from "../assets/images/IMAGE_CARD_3.jpg";
-import IMAGE_CARD_4 from "../assets/images/IMAGE_CARD_4.jpg";
+import IMAGE_CARD_4 from "../assets/images/IMAGE_CARD_4.jpeg";
 import PostCard from "../components/PostCard";
 import Chat from "../components/Chat";
 import { isIOS } from "react-device-detect";

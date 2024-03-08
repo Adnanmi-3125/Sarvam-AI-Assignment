@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import IMAGE_CARD_1 from '../assets/images/IMAGE_CARD_1.jpg';
 import IMAGE_CARD_2 from '../assets/images/IMAGE_CARD_2.jpg';
 import IMAGE_CARD_3 from '../assets/images/IMAGE_CARD_3.jpg';
-import IMAGE_CARD_4 from "../assets/images/IMAGE_CARD_4.jpg";
+import IMAGE_CARD_4 from "../assets/images/IMAGE_CARD_4.jpeg";
 
 const Discover = ({ post, setPost }) => {
   const navigate = useNavigate();
