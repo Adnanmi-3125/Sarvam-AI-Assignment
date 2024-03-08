@@ -23,7 +23,7 @@ const PostCard = ({ post }) => {
         </div>
       </Fade>
 
-      <div className="max-sm:ml-3 text-lg lg:text-[22px] mt-5">
+      <div className="max-sm:pl-3 text-lg lg:text-[22px] mt-5">
 
         <Fade delay={300} triggerOnce >
           <div className="">
