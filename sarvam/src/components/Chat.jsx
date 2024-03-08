@@ -3,14 +3,14 @@ import '../App.css'
 const Chat = () => {
   return (
     <div className=" w-full bg-[#FAF3EA] px-5">
-              <div>
-                <div className="flex justify-between rounded-full h-[50px] w-full bg-[#FCFAF7] border border-neutral-200 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
+              <div className=' lg:max-w-[600px] xl:max-w-[800px] mx-auto'>
+                <div className="flex justify-between rounded-full h-[55px] w-full bg-[#FCFAF7] border border-neutral-200 shadow-[rgba(135,_124,_108,_0.2)_0px_9px_20px]">
                   <input
                     type="text"
                     placeholder="Talk with Pi"
-                    className=" placeholder:text-lg placeholder:text-[#C4B8A4] bg-[#FCFAF7] px-4 py-[6px] rounded-full playfair-display"
+                    className=" placeholder:text-lg w-[150px] sm:w-full placeholder:text-[#C4B8A4] bg-[#FCFAF7] px-4 py-[6px] rounded-full playfair-display"
                   />
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full text-neutral-600 bg-[#FAF3EA] transition-colors duration-300 m-1.5 p-1">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full text-neutral-600 bg-[#FAF3EA] transition-colors duration-300 m-[7px] p-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="13"

@@ -3,8 +3,11 @@ import Card from '../components/Card'
 import TextCard from '../components/TextCard'
 import CardWithTitle from '../components/CardWithTitle'
 import { useNavigate } from 'react-router-dom'
+import img1 from '../assets/img1.png';
+import img2 from '../assets/img2.jpg';
+import img3 from '../assets/img3.jpg';
 
-const Discover = () => {
+const Discover = ({post , setPost}) => {
   const navigate = useNavigate();
   
   return (
@@ -58,41 +61,38 @@ const Discover = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center py-5 mt-2 rounded-t-[28px] md:mt-0 lg:px-6 text-3xl px-5 lg:hidden playfair-display">
-        Good Evening
-      </div>
       <div className=" hidden lg:flex w-[375px] items-center py-5 mt-2 rounded-t-[28px] md:mt-0 lg:px-6 text-3xl px-5 absolute z-10 bg-[#F7EFE3] playfair-display">
-        Good Evening
+        Good afternoon
       </div>
 
       <div className=" flex gap-x-5 lg:mt-16">
         <div className=" flex flex-col gap-y-5 overflow-auto no-scrollbar">
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <Card />
-            <TextCard />
+            <Card img={img3} text={"Have a productive morning"} setPost={setPost}/>
+            <TextCard text={"What color am I?"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <CardWithTitle />
+            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card />
+            <Card img={img2} text={"Let's talk science"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <CardWithTitle />
+            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <Card />
-            <TextCard />
+            <Card img={img1} text={"Have a productive morning"} setPost={setPost}/>
+            <TextCard text={"What color am I?"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 aspect-square mx-5">
-            <Card />
+            <Card img={img3} text={"Make someone feel special"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <Card />
-            <TextCard />
+            <Card img={img2} text={"Have a productive morning"} setPost={setPost}/>
+            <TextCard text={"What color am I?"} setPost={setPost}/>
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
-            <CardWithTitle />
+            <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost}/>
           </div>
           <div className=" w-full h-[80px]"></div>
         </div>
