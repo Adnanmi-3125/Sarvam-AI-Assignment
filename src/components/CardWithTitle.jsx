@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../assets/img1.png';
+import img from '../assets/img1.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 const CardWithTitle = ({setPost , text}) => {
   return (

@@ -22,7 +22,7 @@ const PostCard = ({post}) => {
 
       <div className=" text-lg lg:text-[22px] mt-5">
 
-        <Fade triggerOnce delay={300}>
+        <Fade delay={300} triggerOnce >
           <div className="">
             Have you ever wondered if decisions are as rational as they feel? It
             turns out that minds play tricks, leading people to make choices based
@@ -31,9 +31,8 @@ const PostCard = ({post}) => {
             </div>
         </Fade>
 
-        <Fade delay={500} triggerOnce>
+        <Fade delay={500} triggerOnce cascade >
         <ul className=" list-disc ml-6 mt-5 px-5">
-          <Fade cascade damping={0.2} triggerOnce>
           <li className=" mb-2">
             <span className=" font-bold">Confirmation Bias</span> - Our tendency
             to seek out information that confirms our existing beliefs while
@@ -54,11 +53,7 @@ const PostCard = ({post}) => {
             risks and overestimating the chances of positive outcomes, leading
             to overconfidence.
           </li>
-            <li className=" mt-5 -ml-5 list-none">
-                So, do you think you’ve ever experienced any of these? Let’s see if we
-                can overcome them together.
-            </li>
-          </Fade>
+
         </ul>
         </Fade>
       </div>
