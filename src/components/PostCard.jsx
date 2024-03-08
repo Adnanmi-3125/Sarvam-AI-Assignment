@@ -23,7 +23,7 @@ const PostCard = ({ post }) => {
         </div>
       </Fade>
 
-      <div className="max-sm:pl-3 text-lg lg:text-[22px] mt-5">
+      <div className="text-lg lg:text-[22px] mt-5 lg:pb-28">
 
         <Fade delay={300} triggerOnce >
           <div className="">
@@ -34,36 +34,35 @@ const PostCard = ({ post }) => {
           </div>
         </Fade>
 
-        <Fade delay={500} triggerOnce>
+        <Fade delay={500} triggerOnce cascade >
           <ul className=" list-disc ml-6 mt-5 px-5">
-            <Fade cascade damping={0.2} triggerOnce>
-              <li className=" mb-2">
-                <span className=" font-bold">Confirmation Bias</span> - Our tendency
-                to seek out information that confirms our existing beliefs while
-                ignoring contradictory evidence.
-              </li>
-              <li className=" mb-2">
-                <span className=" font-bold">Sunk Cost Fallacy</span> - Persisting
-                in a course of action because we've invested time, money, or effort,
-                even if it's no longer beneficial.
-              </li>
-              <li className=" mb-2">
-                <span className=" font-bold">Availability Heuristic</span> - Judging
-                the likelihood of an event based on how easily it comes to mind,
-                ignoring relevant statistics.
-              </li>
-              <li className=" mb-2">
-                <span className=" font-bold">Optimism Bias</span> - Underestimating
-                risks and overestimating the chances of positive outcomes, leading
-                to overconfidence.
-              </li>
-              <li className="mb-2 mt-5 -ml-5 list-none">
-                So, do you think you’ve ever experienced any of these? Let’s see if we
-                can overcome them together.
-              </li>
-            </Fade>
+            <li className=" mb-2">
+              <span className=" font-bold">Confirmation Bias</span> - Our tendency
+              to seek out information that confirms our existing beliefs while
+              ignoring contradictory evidence.
+            </li>
+            <li className=" mb-2">
+              <span className=" font-bold">Sunk Cost Fallacy</span> - Persisting
+              in a course of action because we've invested time, money, or effort,
+              even if it's no longer beneficial.
+            </li>
+            <li className=" mb-2">
+              <span className=" font-bold">Availability Heuristic</span> - Judging
+              the likelihood of an event based on how easily it comes to mind,
+              ignoring relevant statistics.
+            </li>
+            <li className=" mb-2">
+              <span className=" font-bold">Optimism Bias</span> - Underestimating
+              risks and overestimating the chances of positive outcomes, leading
+              to overconfidence.
+            </li>
+            <li className="mb-2 mt-5 -ml-5 list-none">
+              So, do you think you’ve ever experienced any of these? Let’s see if we
+              can overcome them together.
+            </li>
+
           </ul>
-          <div className="flex gap-x-5 h-[160px] w-fit mx-5 sm:ml-5 mt-6">
+          <div className="flex gap-x-5 h-[160px] w-fit px-4 sm:ml-5 mt-6">
             <TextCard text={"Healthy Snack Idea For Energy Boost"} setPost={() => { }} icon={rocket_icon} />
             <TextCard text={"Meal Prep Strategies For Busy Weeks"} setPost={() => { }} />
           </div>
