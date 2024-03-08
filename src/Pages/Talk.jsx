@@ -39,7 +39,7 @@ const Talk = ({post , setPost}) => {
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7 text-[#6B6255]"
+              className={`h-7 w-7 text-[#6B6255] ${discover && "text-black"}`}
             >
               <path
                 fill-rule="evenodd"

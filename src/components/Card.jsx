@@ -10,7 +10,7 @@ const Card = ({setPost , img , text}) => {
       }, 50);
     }}
     >
-        <img src={img} alt='image1' className=' object-cover h-full'/>
+        <img src={img} alt='image1' className=' object-cover h-full' loading='lazy'/>
         <div className=' absolute bottom-0 text-white p-5 text-xl bg-gradient-to-t from-black to-transparent w-full'>
           {text}
         </div>

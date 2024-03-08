@@ -15,7 +15,7 @@ const CardWithTitle = ({setPost , text}) => {
             Let pi guess your Horoscope
         </div>
 
-        <img src={img} alt='image1' className=' h-full aspect-square rounded-[20px] object-fill'/>
+        <img src={img} loading='lazy' alt='image1' className=' h-full aspect-square rounded-[20px] object-fill'/>
 
     </div>
   )
