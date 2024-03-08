@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import IMAGE_CARD_1 from '../assets/images/IMAGE_CARD_1.jpg';
 import IMAGE_CARD_2 from '../assets/images/IMAGE_CARD_2.jpg';
 import IMAGE_CARD_3 from '../assets/images/IMAGE_CARD_3.jpg';
+import IMAGE_CARD_4 from "../assets/images/IMAGE_CARD_4.jpg";
 
 const Discover = ({ post, setPost }) => {
   const navigate = useNavigate();
@@ -69,7 +70,7 @@ const Discover = ({ post, setPost }) => {
         <div className=" flex flex-col gap-y-5 overflow-auto no-scrollbar">
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <Card img={IMAGE_CARD_3} text={"Have a productive morning"} setPost={setPost} />
-            <TextCard text={"What color am I?"} setPost={setPost} />
+            <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
@@ -82,14 +83,14 @@ const Discover = ({ post, setPost }) => {
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <Card img={IMAGE_CARD_1} text={"Have a productive morning"} setPost={setPost} />
-            <TextCard text={"What color am I?"} setPost={setPost} />
+            <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
             <Card img={IMAGE_CARD_3} large={true} text={"Make someone feel special"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <Card img={IMAGE_CARD_2} text={"Have a productive morning"} setPost={setPost} />
-            <TextCard text={"What color am I?"} setPost={setPost} />
+            <Card img={IMAGE_CARD_4} text={"What color am I?"} setPost={setPost} />
           </div>
           <div className=" flex gap-x-5 h-[160px] mx-5">
             <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />

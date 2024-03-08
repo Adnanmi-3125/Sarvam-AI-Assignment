@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const TextCard = ({ setPost, text, icon = '' }) => {
   return (
-    <div className='flex flex-col aspect-square items-end justify-between h-full rounded-[20px] border border-white text-left transition-all duration-200 hover:scale-95 bg-[#FAF3EA]  max-xs:min-h-[120px] max-md:min-h-[140px] min-h-[160px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] playfair-display cursor-pointer'
+    <div className='flex flex-col aspect-square items-end justify-between h-full w-full rounded-[20px] border border-white text-left transition-all duration-200 hover:scale-95 bg-[#FAF3EA]  max-xs:min-h-[120px] max-md:min-h-[140px] min-h-[160px] shadow-[0_8px_30px_rgb(0,0,0,0.12)] playfair-display cursor-pointer'
       onClick={() => {
         setPost(false)
         setTimeout(() => {

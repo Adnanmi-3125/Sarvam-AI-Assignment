@@ -21,7 +21,7 @@ const Chat = ({ setPost = () => { } }) => {
           <input
             type="text"
             placeholder="Talk with Pi about this"
-            className=" placeholder:text-lg w-[150px] sm:w-full placeholder:text-[#C4B8A4] bg-[#FCFAF7] px-4 py-[6px] rounded-full playfair-display"
+            className=" placeholder:text-lg w-full placeholder:text-[#C4B8A4] bg-[#FCFAF7] px-4 py-[6px] rounded-full playfair-display"
             onKeyDownCapture={handleKeyDown}
           />
           <div
