@@ -12,11 +12,9 @@ const CardWithTitle = ({ setPost, text }) => {
       }}
     >
       <div className=' flex justify-end flex-col p-2 text-xl'>
-        Let pi guess your Horoscope
+        {text}
       </div>
-
       <LazyLoadImage src={IMAGE_CARD_1} alt='image1' className=' h-full aspect-square rounded-[20px] object-fill' />
-
     </div>
   )
 };

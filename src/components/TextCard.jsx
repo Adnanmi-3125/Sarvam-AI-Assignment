@@ -12,13 +12,12 @@ const TextCard = ({ setPost, text, icon = '' }) => {
         }, 50);
       }}
     >
-      <div class="p-3">
+      <div className="p-3">
         {!icon ? (
           <FiTarget className='max-xs:h-5 h-7 max-xs:w-5 w-7 aspect-square' />
         ) : (
           <LazyLoadImage src={icon} alt='image1' className='max-xs:h-5 h-7 max-xs:w-5 w-7 aspect-square' />
         )}
-
       </div>
       <div className={`${text.length > 32 ? 'p-3' : 'p-4'} sm:text-xl text-sm`}>
         {text}

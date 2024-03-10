@@ -5,13 +5,13 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { LuRefreshCw } from "react-icons/lu";
 import ICON_ROCKET from '../assets/Icons/ICON_ROCKET.png'
 import TextCard from "./TextCard";
+import { description, descriptionPoints, textCard } from "../constants";
 
-const PostCard = ({ post }) => {
+const PostCard = ({ post, setPost }) => {
   return (
     <div className="overflow-auto no-scrollbar px-5 h-full playfair-display max-w-[600px] xl:max-w-[800px] mx-auto bg-[#FAF3EA]">
       {/* <div className="fixed top-20 lg:top-8 w-[600px] xl:w-[800px] h-[60px] lg:h-[100px] bg-gradient-to-b from-[#FAF3EA] to-transparent z-10" /> */}
       <div className=" w-full mt-[50px] lg:mt-[100px]" >
-
         <Fade delay={100} triggerOnce>
           <div className="flex justify-between items-end p-2 gap-2 overflow-hidden rounded-3xl border border-[#E3D4BF] h-[160px] sm:h-[200px] lg:h-[240px]">
             <div className="flex flex-col justify-end w-[45%] text-xl sm:text-2xl md:text-3xl p-3 playfair-display-bold">
@@ -22,55 +22,29 @@ const PostCard = ({ post }) => {
             </div>
           </div>
         </Fade>
-
         <div className="text-lg lg:text-[22px] mt-5 lg:pb-28">
-
           <Fade delay={300} triggerOnce >
             <div className="">
-              Have you ever wondered if decisions are as rational as they feel? It
-              turns out that minds play tricks, leading people to make choices based
-              on unconscious biases and cognitive errors. Here are a few fascinating
-              psychological blindspots to ponder:
+              {description}
             </div>
           </Fade>
-
           <Fade triggerOnce cascade e delay={400}>
-            <ul className=" list-disc ml-6 mt-5 px-5">
-              <li className=" mb-2">
-                <span className=" font-bold">Confirmation Bias</span> - Our tendency
-                to seek out information that confirms our existing beliefs while
-                ignoring contradictory evidence.
-              </li>
-              <li className=" mb-2">
-                <span className=" font-bold">Sunk Cost Fallacy</span> - Persisting
-                in a course of action because we've invested time, money, or effort,
-                even if it's no longer beneficial.
-              </li>
-              <li className=" mb-2">
-                <span className=" font-bold">Availability Heuristic</span> - Judging
-                the likelihood of an event based on how easily it comes to mind,
-                ignoring relevant statistics.
-              </li>
-              <li className=" mb-2">
-                <span className=" font-bold">Optimism Bias</span> - Underestimating
-                risks and overestimating the chances of positive outcomes, leading
-                to overconfidence.
-              </li>
-              <li className="mb-2 mt-5 -ml-5 list-none">
-                So, do you think you’ve ever experienced any of these? Let’s see if we
-                can overcome them together.
-              </li>
-            </ul>
+            {descriptionPoints.map((text, id) => (
+              <ul key={id} className=" list-disc ml-6 mt-5 px-5">
+                <li className=" mb-2">
+                  {text.title && <span className=" font-bold">{text.title} -</span>} {text.description}
+                </li>
+              </ul>
+            ))}
           </Fade>
           <Fade delay={500} triggerOnce cascade className="flex flex-col w-full items-center justify-center">
             <div className="flex sm:gap-x-5 gap-x-2 mt-6 w-min">
-              <TextCard text={"Healthy Snack Idea For Energy Boost"} setPost={() => { }} icon={ICON_ROCKET} />
-              <TextCard text={"Meal Prep Strategies For Busy Weeks"} setPost={() => { }} />
+              <TextCard text={textCard.healthySnack} setPost={() => setPost(textCard.healthySnack)} icon={ICON_ROCKET} />
+              <TextCard text={textCard.mealPrep} setPost={() => setPost(textCard.mealPrep)} />
             </div>
-
             <div className="flex items-center select-none cursor-pointer justify-center text-sm mb-7 mt-7 gap-2 text-[#048247]">
               <LuRefreshCw size={20} />
-              <text>More Ideas</text>
+              <div>More Ideas</div>
             </div>
           </Fade>
         </div>

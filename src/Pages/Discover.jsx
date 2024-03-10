@@ -10,6 +10,7 @@ import PostCard from "../components/PostCard";
 import Chat from "../components/Chat";
 import { isIOS } from "react-device-detect";
 import { FaArrowLeft } from "react-icons/fa6";
+import { discoverItems } from "../constants";
 
 const Discover = ({ post, setPost }) => {
   const navigate = useNavigate();
@@ -55,7 +56,7 @@ const Discover = ({ post, setPost }) => {
                   viewBox="0 0 14 14"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-[14px] w-[14px]"
+                  className="h-[14px] w-[14px]"
                 >
                   <rect
                     x="1.8291"
@@ -92,24 +93,22 @@ const Discover = ({ post, setPost }) => {
               </button>
             </div>
           </div>
-
           <div className="flex items-center py-5 mt-16 rounded-t-[28px] md:mt-16 lg:px-6 text-3xl px-5 lg:hidden playfair-display ">
             Good afternoon
           </div>
-
           <div className=" flex lg:mt-16 w-full">
             <div className=" flex flex-col gap-y-5 overflow-auto no-scrollbar sm:w-[50%]">
               <div className=" flex gap-x-5 h-[160px] mx-5 sm:ml-5">
                 <Card
                   img={IMAGE_CARD_3}
-                  text={"Have a productive morning"}
+                  text={discoverItems.productiveMorning.title}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={discoverItems.neuralNetworks.title} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
-                  text={"Let pi guess your horoscope"}
+                  text={discoverItems.letPiGuess.title}
                   setPost={setPost}
                 />
               </div>
@@ -117,43 +116,43 @@ const Discover = ({ post, setPost }) => {
                 <Card
                   img={IMAGE_CARD_2}
                   large={true}
-                  text={"Let's talk science"}
+                  text={discoverItems.talkScience.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
-                  text={"Let pi guess your horoscope"}
+                  text={discoverItems.letPiGuess.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card
                   img={IMAGE_CARD_1}
-                  text={"Have a productive morning"}
+                  text={discoverItems.productiveMorning.title}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={discoverItems.neuralNetworks.title} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
                   large={true}
                   img={IMAGE_CARD_3}
-                  text={"Make someone feel special"}
+                  text={discoverItems.makeFeelSpecial.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card
                   img={IMAGE_CARD_2}
-                  text={"Have a productive morning"}
+                  text={discoverItems.productiveMorning.title}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={discoverItems.neuralNetworks.title} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
-                  text={"Let pi guess your horoscope"}
+                  text={discoverItems.letPiGuess.title}
                   setPost={setPost}
                 />
               </div>
@@ -164,52 +163,52 @@ const Discover = ({ post, setPost }) => {
                 <Card
                   large={true}
                   img={IMAGE_CARD_3}
-                  text={"Let's talk science"}
+                  text={discoverItems.talkScience.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
-                  text={"Let pi guess your horoscope"}
+                  text={discoverItems.letPiGuess.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5 sm:mr-5">
                 <Card
                   img={IMAGE_CARD_2}
-                  text={"Have a productive morning"}
+                  text={discoverItems.productiveMorning.title}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={discoverItems.neuralNetworks.title} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[320px] aspect-square mx-5">
                 <Card
                   large={true}
                   img={IMAGE_CARD_1}
-                  text={"Make someone feel special"}
+                  text={discoverItems.makeFeelSpecial.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <CardWithTitle
-                  text={"Let pi guess your horoscope"}
+                  text={discoverItems.letPiGuess.title}
                   setPost={setPost}
                 />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
                 <Card
                   img={IMAGE_CARD_1}
-                  text={"Have a productive morning"}
+                  text={discoverItems.productiveMorning.title}
                   setPost={setPost}
                 />
-                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={discoverItems.neuralNetworks.title} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
-                <CardWithTitle text={"Let pi guess your horoscope"} setPost={setPost} />
+                <CardWithTitle text={discoverItems.letPiGuess.title} setPost={setPost} />
               </div>
               <div className=" flex gap-x-5 h-[160px] mx-5">
-                <Card img={IMAGE_CARD_2} text={"Have a productive morning"} setPost={setPost} />
-                <Card img={IMAGE_CARD_4} text={"Neural networks"} setPost={setPost} />
+                <Card img={IMAGE_CARD_2} text={discoverItems.productiveMorning.title} setPost={setPost} />
+                <Card img={IMAGE_CARD_4} text={discoverItems.neuralNetworks.title} setPost={setPost} />
               </div>
               <div className=" w-full h-[40px]"></div>
             </div>
@@ -241,7 +240,7 @@ const Discover = ({ post, setPost }) => {
             </div>
           </div>
 
-          <PostCard post={post} />
+          <PostCard post={post} setPost={setPost} />
           {isIOS ? (
             <div className="mb-[70px]">
               <Chat setPost={setPost} />
